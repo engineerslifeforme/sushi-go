@@ -11,7 +11,7 @@ class Card:
 
     @classmethod
     def score(cls, cards: list, other_keeps: list) -> int:
-        raise NotImplementedError()
+        return 0
 
     @classmethod
     def filter_type(cls, cards: list, other_keeps: list) -> tuple:
@@ -127,15 +127,12 @@ class Chopsticks(Card):
 class Wasabi(Card):
     pass
 
-CARD_TYPES = [
+SCORING_TYPES = [
     Tempura,
     Sashimi,
     Dumpling,
     MakiRolls,
     Nigiri,
-    Pudding,
-    Wasabi,
-    Chopsticks,
 ]
 
 class Deck:
